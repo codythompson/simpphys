@@ -51,19 +51,25 @@ string toString
 
 ### Body
 
+#### not implemented
+
 #### Props
 
 mass
 
-acceleration
-
-force
-
-velocity
-
 position
 
-shape(s?)
+lastPosition
+
+shape
+
+?appliedForce - applied force
+
+?appliedAccel - applied acceleration
+
+?appliedVel - applied velocity
+
+
 
 ---
 
