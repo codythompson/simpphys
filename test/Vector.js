@@ -29,7 +29,7 @@ describe('class Vector', function () {
     it ('should return an array of length 2', function () {
       let vec = new Vector();
       let arr = vec.array;
-      arr.length.should.be(2);
+      arr.length.should.equal(2);
     });
     it ('should return an array containing x an y', function () {
       let vec = new Vector(234, -1);
@@ -82,7 +82,7 @@ describe('class Vector', function () {
     });
     it ('should return an array of length 2', function () {
       let vec = new Vector();
-      vec.toValue().length.should.be(2);
+      vec.toValue().length.should.equal(2);
     });
     it ('should return an array containing x an y', function () {
       let vec = new Vector(254, 3);
