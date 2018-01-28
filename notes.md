@@ -17,6 +17,22 @@
 
 ### Vector
 
+#### not implemented
+
+#### methods
+
+add
+
+subtract
+
+multiply
+
+divide
+
+misc other vector ops
+
+#### implemented
+
 #### Props
 
 number x
