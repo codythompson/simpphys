@@ -49,6 +49,18 @@ string toString
 
 ---
 
+### Motion
+
+#### not implemented
+
+#### Props
+
+Vector accel
+
+Vector vel
+
+---
+
 ### Body
 
 
