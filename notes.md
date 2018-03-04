@@ -1,7 +1,11 @@
 # basic algo
 
 - calculate velocity of movable objects in active area
+  - while bodies have mass, this simple physics system does not take
+    mass into consideration when calculating velocities.
 - find all colliding pairs (graph?)
+  - grid/tilemap
+    - adjacent blocks combine to form larger rectangles
   - create movement bounding rectangles and quadrangle "rays" 
   - broadphase collision detection with bounding rectangles
   - narrowphase collision detection with quadrangle "rays"
@@ -51,8 +55,6 @@ string toString
 
 ### Motion
 
-#### not implemented
-
 #### Props
 
 Vector accel
@@ -76,25 +78,27 @@ shape
 
 #### not implemented
 
-?appliedForce - applied force
+motion
 
-?appliedAccel - applied acceleration
-
-?appliedVel - applied velocity
-
-
+move
 
 ---
+
+### Level
 
 ## shapes
 
 ### Rectangle
+
+### Tile
 
 ### Triangle
 
 ### Quadrangle
 
 ## data structures
+
+### TileMap???
 
 ### Quad Tree (later stage)
 
