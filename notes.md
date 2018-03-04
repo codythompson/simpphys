@@ -51,7 +51,6 @@ string toString
 
 ### Body
 
-#### not implemented
 
 #### Props
 
@@ -62,6 +61,8 @@ position
 lastPosition
 
 shape
+
+#### not implemented
 
 ?appliedForce - applied force
 
