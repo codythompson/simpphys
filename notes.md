@@ -76,25 +76,21 @@ lastPosition
 
 shape
 
-#### not implemented
-
 motion
 
-move
-
 ---
+
+## collision response
 
 ### Level
 
 ## shapes
 
-### Rectangle
+### AARectangle
 
 ### Tile
 
-### Triangle
-
-### Quadrangle
+### AARectangleRay
 
 ## data structures
 
