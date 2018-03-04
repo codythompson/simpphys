@@ -21,10 +21,10 @@ describe ('class Motion', function () {
       motion.vel.x = 12.37;
       motion.vel.y = -12.44;
       motion.step();
-      motion.accel.x.should.be.closeTo(-25.67);
-      motion.accel.y.should.be.closeTo(-0.56);
-      motion.vel.x.should.be.closeTo(-13.37);
-      motion.vel.y.should.be.closeTo(-13.0);
+      motion.accel.x.should.be.closeTo(-25.67, 0.0001);
+      motion.accel.y.should.be.closeTo(-0.56, 0.0001);
+      motion.vel.x.should.be.closeTo(-13.3, 0.0001);
+      motion.vel.y.should.be.closeTo(-13.0, 0.0001);
     });
     it ('should increment the velocity by the acceleration when accel is positive', function () {
       let motion = new Motion();
@@ -33,10 +33,10 @@ describe ('class Motion', function () {
       motion.vel.x = 12.37;
       motion.vel.y = -12.44;
       motion.step();
-      motion.accel.x.should.be.closeTo(25.67);
-      motion.accel.y.should.be.closeTo(0.56);
-      motion.vel.x.should.be.closeTo(38.04);
-      motion.vel.y.should.be.closeTo(-11.88);
+      motion.accel.x.should.be.closeTo(25.67, 0.0001);
+      motion.accel.y.should.be.closeTo(0.56, 0.0001);
+      motion.vel.x.should.be.closeTo(38.04, 0.0001);
+      motion.vel.y.should.be.closeTo(-11.88, 0.0001);
     });
     it ('should not change the velocity when the acceleration is 0', function () {
       let motion = new Motion();
@@ -45,10 +45,10 @@ describe ('class Motion', function () {
       motion.vel.x = 12.37;
       motion.vel.y = -12.44;
       motion.step();
-      motion.accel.x.should.equal(0.0);
-      motion.accel.y.should.equal(0.56);
-      motion.vel.x.should.be.equal(12.37);
-      motion.vel.y.should.be.closeTo(-11.88);
+      motion.accel.x.should.closeTo(0.0, 0.0001);
+      motion.accel.y.should.closeTo(0.56, 0.0001);
+      motion.vel.x.should.be.closeTo(12.37, 0.0001);
+      motion.vel.y.should.be.closeTo(-11.88, 0.0001);
     });
   });
 });
