@@ -37,5 +37,12 @@ describe('class Body', function () {
       bod.lastPos.x.should.equal(-3);
       bod.lastPos.y.should.equal(5);
     });
+    
+    it ('should create a motion field', function () {
+      let bod  = new Body({
+        pos: new Vector(-3, 5)
+      });
+      should.exist(bod.motion);
+    });
   });
 });
