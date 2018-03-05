@@ -1,3 +1,5 @@
+const should = require('chai').should();
+
 const LineSeg = require('../src/LineSeg');
 
 describe ('LineSeg', function() {
