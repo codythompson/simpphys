@@ -88,9 +88,11 @@ motion
 
 ### AARectangle
 
-### Tile
+### LineSegment
 
 ### AARectangleRay
+
+### Tile
 
 ## data structures
 
