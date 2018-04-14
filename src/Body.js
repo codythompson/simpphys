@@ -1,6 +1,7 @@
 const _ = require('lodash');
 
 const Vector = require('./Vector');
+const Motion = require('./Motion');
 
 /**
  * @class Body
@@ -25,7 +26,8 @@ class Body {
       mass: args.mass,
       pos: args.pos,
       lastPos: new Vector(args.pos.x, args.pos.y),
-      shape: args.shape
+      shape: args.shape,
+      motion: new Motion()
     });
 
     console.log(args.pos.x);
