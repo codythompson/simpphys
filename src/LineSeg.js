@@ -20,6 +20,47 @@ class LineSeg {
 
     _.extend(this, {x1, y1, x2, y2});
   }
+
+  get slope () {
+    return (this.y2 - this.y1) / ( this.x2 - this.x1);
+  }
+
+  get yIntercept () {
+    return this.y1 - (this.slope*this.x1);
+  }
+
+  get left () {
+    return Math.min(this.x1, this.x2);
+  }
+
+  get right () {
+    return Math.max(this.x1, this.x2);
+  }
+
+  get bottom () {
+    return Math.min(this.y1, this.y2);
+  }
+
+  get top () {
+    return Math.max(this.y1, this.y2);
+  }
+
+  yAtX (x) {
+    return (this.slope*x) + this.yIntercept;
+  }
+
+  isAboveLine (x, y, inclusive=false) {
+    let lineY = this.yAtX(x);
+    if (inclusive) {
+      return y >= lineY;
+    } else {
+      return y > lineY;
+    }
+  }
+
+  isAboveSegment (x, y, inclusiveY=false) {
+    return x >= this.left && x < this.right && this.isAboveLine(x, y, inclusiveY);
+  }
 };
 
 module.exports = LineSeg;
